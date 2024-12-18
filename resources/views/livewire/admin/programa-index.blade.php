@@ -18,7 +18,7 @@
         </script>
     @endif
     <!-- formulario -->
-    <div class="card card-navy">
+    <div class="card card-navy" style="border-color: #001F3F">
         <div class="card-header">
             <h3 class="card-title">
                 <i class="fas fa-edit mr-2"></i>
@@ -32,31 +32,31 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="nombre_programa">Nombre Programa</label>
-                            <input type="text" class="form-control" name="nombre_programa" id='nombre_programa' placeholder="Ingrese el nombre" autocomplete="off" required oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').toUpperCase();">
+                            <input type="text" class="form-control" name="nombre_programa" id='nombre_programa' placeholder="Ingrese el nombre" autocomplete="off" required oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').toUpperCase();" style="border: 2px solid #001F3F; border-radius: 5px;">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="abreviatura">Abreviatura</label>
-                            <input type="text" class="form-control" name="abreviatura" id='abreviatura' placeholder="Ingrese la abreviatura" autocomplete="off" required oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').toUpperCase();">
+                            <input type="text" class="form-control" name="abreviatura" id='abreviatura' placeholder="Ingrese la abreviatura" autocomplete="off" required oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').toUpperCase();" style="border: 2px solid #001F3F; border-radius: 5px;">
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-info active">Registrar</button>
+                    <button type="submit" class="btn btn-info active" style="background: #001F3F">Registrar</button>
                 </div>
             </form>
         </div>
     </div>
-    <div class="card card-navy card-outline">
+    <div class="card card-navy card-outline" style="border-color: #001F3F">
         <div class="card-header">
             <h3 class="card-title text-center">
                 <i class="fas fa-table mr-2"></i>
                 Tabla de programas
             </h3>
         </div>
-        <div class="card-body">
-            <table id="programa" class="table table-bordered table-striped">
+        <div class="card-body" style="border: 2px solid #001F3F;padding: 15px;background-color: #f9f9f9;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <table id="programa" class="table table-bordered table-striped" style="border-color:#001F3F">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -107,7 +107,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                                            <button type="submit" class="btn btn-info active">Guardar</button>
+                                            <button type="submit" class="btn btn-info active" style="background: #001F3F; color: white">Guardar</button>
                                         </div>
                                     </form>
                                 </div>

@@ -8,8 +8,8 @@ class Titulacion extends Model
 {
     protected $fillable = [
         'nro_acta',
-        'nro_red1',
-        'nro_red2',
+        'nro_rd1',
+        'nro_rd2',
         'titulando1',
         'titulando2',
         'promocion',
@@ -30,8 +30,23 @@ class Titulacion extends Model
         return $this->belongsTo(Programa::class, 'programa_id');
     }
 
-    public function docente()
+    // public function docente()
+    // {
+    //     return $this->belongsTo(Docente::class, 'jurado1','jurado2','presidente');
+    // }
+
+    public function juradouno()
     {
-        return $this->belongsTo(Docente::class, 'jurado1','jurado2','presidente');
+        return $this->belongsTo(Docente::class, 'jurado1','id');
+    }
+
+    public function juradodos()
+    {
+        return $this->belongsTo(Docente::class, 'jurado2','id');
+    }
+
+    public function docentepresidente()
+    {
+        return $this->belongsTo(Docente::class, 'presidente','id');
     }
 }

@@ -49,7 +49,6 @@
                 button.addEventListener('click', function (e) {
                     e.preventDefault();
                     const form = this.closest('.delete-form');
-        
                     Swal.fire({
                         title: "¿Estás seguro?",
                         text: "¡No podrás revertir esto!",

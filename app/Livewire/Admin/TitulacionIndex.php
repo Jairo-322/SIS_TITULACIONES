@@ -24,19 +24,19 @@ class TitulacionIndex extends Component
         return $this->belongsTo(Programa::class, 'categoria_id');
     }
 
-    public function jurado1()
-    {
-        return $this->belongsTo(Docente::class, 'jurado1');
-    }
+    // public function jurado1()
+    // {
+    //     return $this->belongsTo(Docente::class, 'jurado1');
+    // }
 
-    public function jurado2()
-    {
-        return $this->belongsTo(Docente::class, 'jurado2');
-    }
+    // public function jurado2()
+    // {
+    //     return $this->belongsTo(Docente::class, 'jurado2');
+    // }
 
-    public function presidente()
-    {
-        return $this->belongsTo(Docente::class, 'presidente');
-    }
+    // public function presidente()
+    // {
+    //     return $this->belongsTo(Docente::class, 'presidente');
+    // }
 }
 
